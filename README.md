@@ -18,6 +18,10 @@ This function remove multiple blankspaces from string and replace it with 1 spac
 String.prototype.fullTrim = function () {
     return this.replace(/ +/g, ' ').trim();
 }
+
+interface String {
+    fullTrim(): string
+}
 ```
 
 Here is a example where i use it, user clicking too much blank spaces and i trimming it
@@ -49,6 +53,10 @@ This test's is not from my own, i have this from this "Remove blankspaces" link 
 We don't need any more use regex and replace manual for do this, fullTrim function do it for us.
 
 When we need to set a min and max lenght of string we can fullTrim it and maybe user can save on DB or something longer text then type on form or other input, because users type good looking text for human not for computer, the usless blankspaces on DB can be trimmed and when user try to watch this later, developer can fetch this from DB and reformat for good looking again, but saving space in DB, that's what we deploying our apps, usless blankspace is trimmed and computer reading code well, but developer have good looking code on his IDE.
+
+If this idea is good, we can extend this with optional argument, which can work like this:
+[trim-characters](https://github.com/Kingwl/proposal-string-trim-characters)
+but for whole word.
 
 ## Comparison
 
