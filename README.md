@@ -26,8 +26,11 @@ Here is a example where i use it, user clicking too much blank spaces and i trim
 console.log("   To    Much     Space    Between   ".fullTrim());
 ```
 
-The output: "To Much Space Between"
+The output:
 
+```js
+"To Much Space Between"
+```
 
 ### Performance
 
