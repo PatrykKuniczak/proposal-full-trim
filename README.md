@@ -35,7 +35,7 @@ The output:
 ### Performance
 
 ```js
-str.replace( /  +/g, ' ' )       ->  380ms
+str.replace( /  +/g, ' ' )       ->  380ms  // I use this
 str.replace( /\s\s+/g, ' ' )     ->  390ms
 str.replace( / {2,}/g, ' ' )     ->  470ms
 str.replace( / +/g, ' ' )        ->  790ms
