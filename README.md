@@ -29,7 +29,8 @@ console.log("   To    Much     Space    Between   ".fullTrim());
 The output: "To Much Space Between"
 
 
-Here is performance test's:
+### Performance
+
 ```js
 str.replace( /  +/g, ' ' )       ->  380ms
 str.replace( /\s\s+/g, ' ' )     ->  390ms
